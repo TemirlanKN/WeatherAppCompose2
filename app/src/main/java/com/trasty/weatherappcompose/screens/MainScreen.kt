@@ -28,14 +28,13 @@ fun MainScreen() {
         contentDescription = "image_1",
         modifier = Modifier
             .fillMaxSize()
-            .alpha(0.7f),
+            .alpha(0.8f),
         contentScale = ContentScale.FillBounds
     )
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(5.dp),
-
+            .padding(5.dp)
         ) {
         Card(
             modifier = Modifier.fillMaxWidth(),
@@ -47,7 +46,8 @@ fun MainScreen() {
                 modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Row(modifier = Modifier.fillMaxWidth(),
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Text(
@@ -59,7 +59,8 @@ fun MainScreen() {
                     AsyncImage(
                         model = "https://cdn.weatherapi.com/weather/64x64/night/113.png",
                         contentDescription = "im2",
-                        modifier = Modifier.size(35.dp)
+                        modifier = Modifier
+                            .size(35.dp)
                             .padding(top = 3.dp, end = 8.dp)
                     )
                 }
