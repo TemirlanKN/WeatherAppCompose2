@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.trasty.weatherappcompose.screens.Example
 import com.trasty.weatherappcompose.screens.ImageBox
 import com.trasty.weatherappcompose.screens.MainScreen
+import com.trasty.weatherappcompose.screens.fontMy
 import com.trasty.weatherappcompose.ui.theme.WeatherAppComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,13 +31,14 @@ class MainActivity : ComponentActivity() {
                 val title = "Stonks"
 //                MainScreen()
 //                Example()
-                Box(
+                fontMy()
+                /*Box(
                     modifier = Modifier
                         .fillMaxWidth(0.5f)
                         .padding(16.dp)
                 ) {
                     ImageBox(painter = painter, contentDescription = description, title = title)
-                }
+                }*/
             }
         }
     }
